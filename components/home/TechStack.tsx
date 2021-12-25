@@ -1,36 +1,39 @@
-import styled from 'styled-components';
 import React from 'react';
+import styled from 'styled-components';
+import Box from 'components/common/Container';
 
-const Header = styled.div`
-  justify-content: space-between;
-  color: #101010;
-  text-align: center;
-  border-top: solid 16px #101010;
-  border-bottom: solid 16px #101010;
-  padding-bottom: 48px;
-  padding-top: 48px;
+const Bold = styled.span`
+  border-bottom: solid 4px yellow;
+  font-weight: 700;
+  transition: all 0.3s ease;
 
-  h1 {
-    font-size: 96px;
-    font-weight: 900;
+  &:hover {
+    border-color: #39ff14;
   }
 `;
 
-const Stack = styled.div`
-  padding: 24px;
-  height: 480px;
+const Frontend = styled.p`
+  padding-bottom: 3rem;
 `;
 
-const TechStack = () => {
-  return (
-    <>
-      <Header>
-        <h1>TECH STACK</h1>
-      </Header>
+const Backend = styled.p``;
 
-      <Stack></Stack>
-    </>
+const Techstack = () => {
+  return (
+    <Box>
+      <Frontend>
+        I mainly work within the React ecosystem, but im eager to learn any
+        other technology to solve problems. My current tech stack is{` `}
+        <Bold>JavaScript</Bold>, <Bold>TypeScript</Bold>, <Bold>Next.js</Bold>
+        {` `}& <Bold>Styled-Components</Bold>.{` `}
+      </Frontend>
+      <Backend>
+        When my project needs a backend i use <Bold>Node js</Bold>,{` `}
+        <Bold>Express</Bold>, <Bold>Graph QL</Bold>, & <Bold>Mongo DB</Bold>.
+        {` `}
+      </Backend>
+    </Box>
   );
 };
 
-export default TechStack;
+export default Techstack;

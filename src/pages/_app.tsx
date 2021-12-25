@@ -14,9 +14,12 @@ const GlobalStyle = createGlobalStyle`
     
   }
   body {
-    line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #101010;
+    color: #e4e4e4;
+
   }
   img, picture, video, canvas, svg {
     display: block;

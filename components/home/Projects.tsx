@@ -1,122 +1,169 @@
-import styled from 'styled-components';
 import React from 'react';
-import Link from 'next/link';
+import styled from 'styled-components';
+import Box from 'components/common/Container';
+import device from '../common/MediaQueries';
 
-const Header = styled.div`
-  justify-content: space-between;
-  background: #101010;
-  color: #ffffff;
-  text-align: center;
-  border-top: solid 16px #101010;
-  border-bottom: solid 16px #101010;
-  padding-bottom: 48px;
-  padding-top: 48px;
+const Project = styled.div`
+  padding-bottom: 5rem;
 
-  h1 {
-    font-size: 96px;
-    font-weight: 900;
+  @media ${device.desktop} {
+    a {
+      color: yellow;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+  }
+
+  @media ${device.laptop} {
+    a {
+      color: yellow;
+      font-size: 3rem;
+      font-weight: 700;
+    }
   }
 `;
 
-const Content = styled.div`
-  padding: 24px;
-  background: #ff9900;
-  text-align: center;
-
-  a {
-    font-weight: 900;
-    font-size: 96px;
-  }
-`;
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-`;
-
-const Card = styled.div`
-  width: 100%;
-  border: 16px solid #000000;
-  background-color: #000000;
-`;
-
-const Bar = styled.div`
-  background: #ffffff;
-  border-bottom: 16px solid #000000;
-  padding: 8px;
+const Tech = styled.div`
+  font-weight: 700;
   display: flex;
-  justify-content: flex-end;
-`;
+  gap: 16px;
+  align-items: center;
+  justify-items: center;
 
-const Status = styled.div`
-  border: 4px solid #000000;
-  background: #ff9900;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-`;
+  @media ${device.desktop} {
+    p {
+      font-size: 2rem;
+      display: flex;
+      gap: 8px;
+    }
+  }
 
-const Demo = styled.div`
-  img {
-    height: 380px;
-    width: 100%;
+  @media ${device.laptop} {
+    p {
+      font-size: 1.5rem;
+      display: flex;
+      gap: 8px;
+    }
   }
 `;
 
-const Description = styled.div`
-  height: 380px;
+const Divider = styled.span`
+  font-weight: 700;
+  color: yellow;
+
+  @media ${device.desktop} {
+    font-size: 3rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 2rem;
+  }
 `;
 
 const Projects = () => {
   return (
-    <>
-      <Header>
-        <h1>PROJECTS</h1>
-      </Header>
+    <Box>
+      <h1>SELECTED PROJECTS</h1>
 
-      <Content>
-        <Container>
-          <Card>
-            <Bar>
-              <Status />
-            </Bar>
+      <Project>
+        <a href="https://www.nartefacts.com/" target="_blank" rel="noreferrer">
+          Nartefacts
+        </a>
+        <Tech>
+          <p>Mongo DB</p>
+          <Divider>*</Divider>
+          <p>GraphQL</p>
+          <Divider>*</Divider>
+          <p>Javascript</p>
+          <Divider>*</Divider>
+          <p>Next.js</p>
+          <Divider>*</Divider>
+          <p>Styled-Components</p>
+        </Tech>
+        <p>
+          A full stack application that provides color inspirations for
+          designers with a twist, the colours are based on african album covers.
+          Users can like color pallets & thier likes are saved to local storage.
+        </p>
+      </Project>
 
-            <Description />
+      <Project>
+        <a
+          href="https://www.devportfolios.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Dev Portfolios
+        </a>
+        <Tech>
+          <p>GraphCMS</p>
+          <Divider>*</Divider>
+          <p>GraphQL</p>
+          <Divider>*</Divider>
+          <p>Typescript</p>
+          <Divider>*</Divider>
+          <p>Next.js</p>
+          <Divider>*</Divider>
+          <p>Styled-Components</p>
+        </Tech>
+        <p>
+          A full stack application that curates the best software developer
+          {`portfolio's`} on the internet. There are currenlty more than 50
+          {`portfolio's`} featured.
+        </p>
+      </Project>
 
-            <Demo></Demo>
-          </Card>
-          <Card>
-            <Bar>
-              <Status />
-            </Bar>
+      <Project>
+        <a
+          href="https://product-feedback-fem.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Product Feedback App
+        </a>
+        <Tech>
+          <p>Mongo DB</p>
+          <Divider>*</Divider>
+          <p>Node.js & Express</p>
+          <Divider>*</Divider>
+          <p>Javascript</p>
+          <Divider>*</Divider>
+          <p>React</p>
+          <Divider>*</Divider>
+          <p>Styled-Components</p>
+        </Tech>
+        <p>
+          Demo of a full stack app that allows users to create, edit and delete
+          feedback
+        </p>
+      </Project>
 
-            <Description />
-
-            <Demo></Demo>
-          </Card>
-          <Card>
-            <Bar>
-              <Status />
-            </Bar>
-
-            <Description />
-
-            <Demo></Demo>
-          </Card>
-          <Card>
-            <Bar>
-              <Status />
-            </Bar>
-
-            <Description />
-
-            <Demo></Demo>
-          </Card>
-        </Container>
-        <Link href={`/`}> VIEW ALL </Link>
-      </Content>
-    </>
+      <Project>
+        <a
+          href="https://product-feedback-fem.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Front End Cardio
+        </a>
+        <Tech>
+          <p>GraphCMS</p>
+          <Divider>*</Divider>
+          <p>GraphQL</p>
+          <Divider>*</Divider>
+          <p>Typescript</p>
+          <Divider>*</Divider>
+          <p>Next.js</p>
+          <Divider>*</Divider>
+          <p>Styled-Components</p>
+        </Tech>
+        <p>
+          A full stack application that provides color inspirations for
+          designers with a twist, the colours are based on african album covers.
+          Users can like color pallets & thier likes are saved to local storage
+        </p>
+      </Project>
+    </Box>
   );
 };
 

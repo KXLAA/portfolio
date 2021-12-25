@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const LayoutStyled = styled.main`
-  max-width: 1500px;
-  width: 100%;
-  border: solid #101010 16px;
+  max-width: 1940px;
   margin: 0 auto;
+  padding: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 `;
 
 const Layout = ({ children }: React.PropsWithChildren<Record<never, any>>) => {
