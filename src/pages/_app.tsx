@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: #101010;
-    color: #e4e4e4;
+    color: #d4d4d4;
 
   }
   img, picture, video, canvas, svg {
