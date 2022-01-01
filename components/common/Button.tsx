@@ -44,4 +44,7 @@ export const Tag = styled.div`
   font-size: 16px;
   color: #ffffff;
   background: #222222;
+  width: fit-content;
+  scroll-snap-align: center;
+  flex: 0 0 auto;
 `;
