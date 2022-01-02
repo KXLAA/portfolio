@@ -6,6 +6,12 @@ const Cv = styled.a`
   font-weight: 600;
   transition: all 0.3s ease;
   color: #ffffff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: #949494;
+  }
 `;
 
 const About = () => {

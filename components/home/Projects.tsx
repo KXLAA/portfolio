@@ -12,26 +12,33 @@ const Container = styled.div`
 
 const Project = styled.div`
   background: #121212;
+  transition: all 0.3s ease;
   border-radius: 8px;
   border: solid #222222 4px;
   display: flex;
   flex-direction: column;
+  -webkit-box-shadow: 3px 4px 15px -8px rgba(0, 0, 0, 0.71);
+  box-shadow: 3px 4px 15px -8px rgba(0, 0, 0, 0.71);
 
-  @media ${device.desktop} {
-    a {
-      color: white;
-      font-size: 4rem;
-      font-weight: 700;
+  &:hover {
+    transform: translateX(0rem) translateY(-0.3125rem);
+  }
+
+  a {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: #949494;
     }
   }
 
   @media ${device.laptop} {
     a {
-      display: block;
-      color: white;
       font-size: 2.8rem;
-      font-weight: 700;
-      width: fit-content;
     }
   }
 `;
@@ -43,6 +50,11 @@ const Indicator = styled.div`
   display: flex;
   align-items: center;
   padding: 24px;
+
+  div {
+    font-size: 2rem;
+    color: #ffffff;
+  }
 `;
 
 const Heading = styled.h1`
@@ -88,7 +100,7 @@ const Tech = styled.div`
 
 const Projects = () => {
   return (
-    <div>
+    <section>
       <Heading>SELECTED PROJECTS</Heading>
 
       <Container>
@@ -96,13 +108,15 @@ const Projects = () => {
           ({ title, url, description, videoMp4, videoWebm, tech, poster }) => (
             <Project key={title}>
               <Indicator>
-                <Circle />
+                <div>⌘</div>
               </Indicator>
 
-              <video autoPlay loop muted poster={poster}>
-                <source src={videoWebm} type="video/webm" />
-                <source src={videoMp4} type="video/mp4" />
-              </video>
+              <a href={url} target="_blank" rel="noreferrer">
+                <video autoPlay loop muted poster={poster}>
+                  <source src={videoWebm} type="video/webm" />
+                  <source src={videoMp4} type="video/mp4" />
+                </video>
+              </a>
 
               <Description>
                 <a href={url} target="_blank" rel="noreferrer">
@@ -121,7 +135,7 @@ const Projects = () => {
           ),
         )}
       </Container>
-    </div>
+    </section>
   );
 };
 

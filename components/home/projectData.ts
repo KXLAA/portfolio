@@ -30,11 +30,11 @@ export const projectData = [
   },
   {
     title: ` Front-End Cardio`,
-    url: `https://product-feedback-fem.herokuapp.com/`,
+    url: `https://frontendcardio.vercel.app/`,
     description: `A collection of some of the best  challenge & tutorial projects i completed.`,
-    poster: ``,
-    videoMp4: `/Untitled.webm`,
-    videoWebm: `/Untitled.webm`,
+    poster: `https://ucarecdn.com/a85db1c9-4652-485e-b507-41997a7106e9/frontendcardio.webp`,
+    videoMp4: `https://ucarecdn.com/5ca69719-8a2b-40ae-9f62-3feacea8f4a5/frontendcardio.mp4`,
+    videoWebm: `https://ucarecdn.com/c3475aa3-7ba4-4e60-9768-73cda55e9d6d/frontendcardio.webm`,
     tech: [`GraphCMS`, `GraphQL`, `Typescript`, `Next.js`, `Styled-Components`],
   },
 ];
