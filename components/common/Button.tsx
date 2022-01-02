@@ -36,12 +36,10 @@ export const Tag = styled.div`
   display: flex;
   padding: 4px 10px;
   border-radius: 8px;
-  width: fit-content;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
   font-weight: 600;
-  font-size: 16px;
   color: #ffffff;
   background: #222222;
   width: fit-content;

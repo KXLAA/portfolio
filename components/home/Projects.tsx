@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import device from '../common/MediaQueries';
 import { Tag } from 'components/common/Button';
+import { projectData } from './projectData';
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
+  gap: 4rem;
 `;
 
 const Project = styled.div`
@@ -65,54 +66,23 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 24px;
-  padding-bottom: 5rem;
+  padding: 2rem;
+  padding-bottom: 2rem;
 
   p {
-    font-size: 1.6rem;
-  }
-
-  p {
-    @media ${device.desktop} {
-      font-weight: 400;
-      font-size: 2.5rem;
-    }
+    font-size: 1.4rem;
   }
 `;
 
 const Tech = styled.div`
   font-weight: 700;
   display: flex;
-  gap: 16px;
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  padding: 0 1.5rem;
-  -webkit-overflow-scrolling: touch;
-  margin: 0 -1rem;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  margin-bottom: 0.5rem;
-
-  @media ${device.desktop} {
-    p {
-      font-size: 10px;
-      display: flex;
-      gap: 8px;
-    }
-  }
+  font-size: 16px;
 
   @media ${device.laptop} {
-    p {
-      font-size: 16px;
-      display: flex;
-      gap: 8px;
-    }
+    font-size: 12.5px;
+    display: flex;
   }
 `;
 
@@ -122,158 +92,34 @@ const Projects = () => {
       <Heading>SELECTED PROJECTS</Heading>
 
       <Container>
-        <Project>
-          <Indicator>
-            <Circle />
-          </Indicator>
+        {projectData.map(
+          ({ title, url, description, videoMp4, videoWebm, tech, poster }) => (
+            <Project key={title}>
+              <Indicator>
+                <Circle />
+              </Indicator>
 
-          <video autoPlay loop muted>
-            <source src="/Untitled.webm" type="video/webm" />
-            <source src="/Untitled.mp4" type="video/mp4" />
-          </video>
+              <video autoPlay loop muted poster={poster}>
+                <source src={videoWebm} type="video/webm" />
+                <source src={videoMp4} type="video/mp4" />
+              </video>
 
-          <Description>
-            <a
-              href="https://www.nartefacts.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Nartefacts
-            </a>
+              <Description>
+                <a href={url} target="_blank" rel="noreferrer">
+                  {title}
+                </a>
 
-            <Tech>
-              <Tag>Mongo DB</Tag>
-              <Tag>GraphQL</Tag>
-              <Tag>Javascript</Tag>
-              <Tag>Next.js</Tag>
-              <Tag>Styled-Components</Tag>
-            </Tech>
+                <Tech>
+                  {tech.map((stack) => (
+                    <Tag key={stack}>{stack}</Tag>
+                  ))}
+                </Tech>
 
-            <p>
-              A full-stack application that provides colour pallette
-              inspirations for designers & developers. The colour palettes are
-              inspired by the vibrant colours of African album covers. Users can
-              like colour pallets & their likes are saved to local storage. The
-              like count on each colour pallette is persisted in a Mongo DB
-              database.
-            </p>
-          </Description>
-        </Project>
-
-        <Project>
-          <Indicator>
-            <Circle />
-          </Indicator>
-
-          <video autoPlay loop muted>
-            <source src="/Untitled.webm" type="video/webm" />
-            <source src="/Untitled.mp4" type="video/mp4" />
-          </video>
-
-          <Description>
-            <a
-              href="https://www.devportfolios.dev/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Dev Portfolios
-            </a>
-
-            <Tech>
-              <Tag>GraphCMS</Tag>
-              <Tag>GraphQL</Tag>
-              <Tag>Typescript</Tag>
-              <Tag>Next.js</Tag>
-              <Tag>Styled-Components</Tag>
-            </Tech>
-
-            <p>
-              A website that curates the most beautiful developer portfolios on
-              the web for inspiration. I built Devportfolios after looking for
-              targeted inspiration to build this portfolio. I wanted a design
-              inspiration site more targeted towards software developer
-              {``}
-              {`portfolio's`} but I {`couldn't`} find any so Devportfolios was
-              born.
-            </p>
-          </Description>
-        </Project>
-
-        <Project>
-          <Indicator>
-            <Circle />
-          </Indicator>
-
-          <video autoPlay loop muted>
-            <source src="/Untitled.webm" type="video/webm" />
-            <source src="/Untitled.mp4" type="video/mp4" />
-          </video>
-
-          <Description>
-            <a
-              href="https://product-feedback-fem.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Feedback App
-            </a>
-
-            <Tech>
-              <Tag>Mongo DB</Tag>
-              <Tag>Node.js</Tag>
-              <Tag>Express</Tag>
-              <Tag>Javascript</Tag>
-              <Tag>React</Tag>
-              <Tag>Styled-Components</Tag>
-            </Tech>
-
-            <p>
-              A full-stack application that allows users to create, update and
-              delete feedback suggestions. The design was provided by frontend
-              mentor. It was originally meant to be a frontend build but I added
-              Node js & express backend which communicated with a MongoDB
-              database with a REST API. I also Included authentication.
-            </p>
-          </Description>
-        </Project>
-
-        <Project>
-          <Indicator>
-            <Circle />
-          </Indicator>
-
-          <video autoPlay loop muted>
-            <source src="/Untitled.webm" type="video/webm" />
-            <source src="/Untitled.mp4" type="video/mp4" />
-          </video>
-
-          <Description>
-            <a
-              href="https://product-feedback-fem.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Front End Cardio
-            </a>
-
-            <Tech>
-              <Tag>GraphCMS</Tag>
-              <Tag>GraphQL</Tag>
-              <Tag>Typescript</Tag>
-              <Tag>Next.js</Tag>
-              <Tag>Styled-Components</Tag>
-            </Tech>
-
-            <p>
-              As part of my self-learning, I completed a lot of challenges and
-              tutorial projects. Front end cardio is a collection of some of the
-              best of these projects & challenges, there are currently 15
-              projects in the collection created with a range of different
-              technologies. You can view the live demos and the accompanying
-              source code of all projects listed.
-            </p>
-          </Description>
-        </Project>
+                <p>{description}</p>
+              </Description>
+            </Project>
+          ),
+        )}
       </Container>
     </div>
   );
