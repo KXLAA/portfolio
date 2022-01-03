@@ -48,7 +48,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <title>Kola | Front-End Developer</title>
         <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="Kola is a Front-End Developer based in Lagos, Nigeria."
         />
         <link
           rel="apple-touch-icon"
@@ -71,6 +71,33 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#101010" />
         <meta name="msapplication-TileColor" content="#101010" />
         <meta name="theme-color" content="#ffffff" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://kxlaa.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kola || Front-End Developer" />
+        <meta
+          property="og:description"
+          content="Kola is a Front-End Developer based in Lagos, Nigeria."
+        />
+        <meta
+          property="og:image"
+          content="https://ucarecdn.com/75a76fba-7bd1-4ef5-b29a-4b9f5d8f5d94/ogimage.png"
+        />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="https://kxlaa.com/" />
+        <meta property="twitter:url" content="https://kxlaa.com/" />
+        <meta name="twitter:title" content="Kola || Front-End Developer" />
+        <meta
+          name="twitter:description"
+          content="Kola is a Front-End Developer based in Lagos, Nigeria."
+        />
+        <meta
+          name="twitter:image"
+          content="https://ucarecdn.com/75a76fba-7bd1-4ef5-b29a-4b9f5d8f5d94/ogimage.png"
+        />
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
