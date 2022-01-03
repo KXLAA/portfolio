@@ -31,7 +31,7 @@ const Stack = () => {
 
       <Box>
         <Backend>
-          When my project needs a backend i use{` `}
+          When my project needs a backend I use{` `}
           <Bold color="#699E5B">Node js</Bold>,{` `}
           <Bold color="#949494">Express</Bold>,{` `}
           <Bold color="#DC5EB7">GraphQL</Bold>, &{` `}
