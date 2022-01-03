@@ -11,6 +11,16 @@ const Box = styled.section`
     font-weight: 400;
     font-size: 2.5rem;
   }
+
+  @media ${device.tablet} {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  @media ${device.mobile} {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 `;
 
 export default Box;

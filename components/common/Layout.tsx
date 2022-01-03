@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from './MediaQueries';
 
 export const LayoutStyled = styled.main`
   max-width: 1940px;
@@ -9,6 +10,19 @@ export const LayoutStyled = styled.main`
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media ${device.tablet} {
+    padding: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media ${device.mobile} {
+    padding: 1.2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 2rem;
+  }
 `;
 
 const Layout = ({ children }: React.PropsWithChildren<Record<never, any>>) => {

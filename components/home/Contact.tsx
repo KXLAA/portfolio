@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Box from 'components/common/Container';
+import device from 'components/common/MediaQueries';
+import { Heading } from './Projects';
 
 const Container = styled(Box)`
   display: flex;
@@ -14,22 +16,19 @@ const MetaContainer = styled.section`
   align-items: flex-end;
 `;
 
-const Heading = styled.h1`
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  color: #ffff;
-  padding: 4px 16px;
-  border-radius: 8px;
-  background-color: #222222;
-  width: fit-content;
-`;
-
 const Link = styled.a`
   transition: all 0.3s ease;
 
   &:hover {
     text-decoration: underline;
     color: #949494;
+  }
+`;
+
+const PopUpContainer = styled.div`
+  position: relative;
+  @media ${device.mobile} {
+    display: none;
   }
 `;
 
@@ -107,7 +106,7 @@ const Contact = () => {
               Github
             </Link>
           </Container>
-          <div style={{ position: `relative` }}>
+          <PopUpContainer>
             {state && (
               <PopUp>
                 <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
@@ -131,7 +130,7 @@ const Contact = () => {
             )}
 
             <Indicator onClick={() => setstate(!state)}>⌘</Indicator>
-          </div>
+          </PopUpContainer>
         </MetaContainer>
       </div>
     </>

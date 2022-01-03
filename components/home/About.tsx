@@ -19,8 +19,8 @@ const About = () => {
     <Box>
       <p>
         Hello, {`I'm`} Kola. A Front-End Developer based in Lagos, Nigeria. I am
-        passionate about creating accessible pixel-perfect user interfaces that
-        scale. You can check out my CV <Cv href="/">here</Cv>.
+        passionate about creating accessible & pixel-perfect user interfaces
+        that scale. You can check out my CV <Cv href="/">here</Cv>.
       </p>
     </Box>
   );

@@ -8,6 +8,11 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 `;
 
 const Project = styled.div`
@@ -30,15 +35,21 @@ const Project = styled.div`
     font-weight: 700;
     transition: all 0.3s ease;
 
+    @media ${device.laptop} {
+      font-size: 2.8rem;
+    }
+
+    @media ${device.mobile} {
+      font-size: 2rem;
+    }
+
+    @media ${device.mobileXS} {
+      font-size: 1.5rem;
+    }
+
     &:hover {
       text-decoration: underline;
       color: #949494;
-    }
-  }
-
-  @media ${device.laptop} {
-    a {
-      font-size: 2.8rem;
     }
   }
 `;
@@ -57,7 +68,7 @@ const Indicator = styled.div`
   }
 `;
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
   font-size: 2.5rem;
   color: #ffff;
   padding: 4px 16px;
@@ -65,13 +76,14 @@ const Heading = styled.h1`
   background-color: #222222;
   width: fit-content;
   margin-bottom: 1.5rem;
-`;
 
-const Circle = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: white;
-  border-radius: 100%;
+  @media ${device.mobile} {
+    font-size: 1.8rem;
+  }
+
+  @media ${device.mobileXS} {
+    font-size: 1.3rem;
+  }
 `;
 
 const Description = styled.div`
@@ -81,8 +93,16 @@ const Description = styled.div`
   padding: 2rem;
   padding-bottom: 2rem;
 
+  @media ${device.mobile} {
+    padding: 1rem;
+  }
+
   p {
     font-size: 1.4rem;
+
+    @media ${device.mobile} {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -93,8 +113,12 @@ const Tech = styled.div`
   font-size: 16px;
 
   @media ${device.laptop} {
-    font-size: 12.5px;
+    font-size: 11px;
     display: flex;
+  }
+
+  @media ${device.tabletL} {
+    display: none;
   }
 `;
 
