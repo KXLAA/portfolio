@@ -1,8 +1,8 @@
-import Layout from 'components/common/Layout';
-import About from 'components/home/About';
-import Projects from 'components/home/Projects';
-import Contact from 'components/home/Contact';
-import Techstack from 'components/home/Techstack';
+import Layout from '../../components/common/Layout';
+import About from '../../components/home/About';
+import Projects from '../../components/home/Projects';
+import Contact from '../../components/home/Contact';
+import Techstack from '../../components/home/Techstack';
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Box from 'components/common/Container';
-import device from 'components/common/MediaQueries';
+import Box from '../../components/common/Container';
+import device from '../../components/common/MediaQueries';
 import { Heading } from './Projects';
 
 const Container = styled(Box)`

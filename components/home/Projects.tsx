@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import device from '../common/MediaQueries';
-import { Tag } from 'components/common/Button';
+import { Tag } from '../../components/common/Button';
 import { projectData } from './projectData';
 
 const Container = styled.div`

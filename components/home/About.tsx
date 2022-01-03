@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Box from 'components/common/Container';
+import Box from '../../components/common/Container';
 
 const Cv = styled.a`
   font-weight: 600;
