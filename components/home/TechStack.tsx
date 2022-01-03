@@ -15,7 +15,7 @@ const Frontend = styled.p``;
 
 const Backend = styled.p``;
 
-const Techstack = () => {
+export const Techstack = () => {
   return (
     <>
       <Box>
@@ -43,5 +43,3 @@ const Techstack = () => {
     </>
   );
 };
-
-export default Techstack;
