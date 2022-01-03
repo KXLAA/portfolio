@@ -20,8 +20,8 @@ const Stack = () => {
     <>
       <Box>
         <Frontend>
-          I mainly work within the React ecosystem, but im eager to learn any
-          other technology to solve problems. My current tech stack is{` `}
+          I mainly work within the React ecosystem, but {`I'm`} always eager to
+          learn new technologies. My current tech stack is{` `}
           <Bold color="#f7df1e ">JavaScript</Bold>,{` `}
           <Bold color="#007ACC">TypeScript</Bold>,{` `}
           <Bold>Next.js</Bold>
