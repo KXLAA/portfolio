@@ -4,13 +4,13 @@ import Box from '../../components/common/Container';
 import device from '../../components/common/MediaQueries';
 import { Heading } from './Projects';
 
-const Container = styled(Box)`
+const ContactLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
 `;
 
-const MetaContainer = styled.section`
+const MetaContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -71,19 +71,21 @@ const PopUp = styled.div`
 const Contact = () => {
   const [state, setstate] = useState(false);
 
-  const Indicator = styled.div`
+  const Indicator = styled.button`
     transition: all 0.3s ease;
     font-size: 5rem;
     color: ${state ? `white` : `#d4d4d4`};
     cursor: pointer;
+    background: none;
+    border: none;
   `;
 
   return (
     <>
-      <div>
+      <Box>
         <Heading>CONTACT</Heading>
         <MetaContainer>
-          <Container>
+          <ContactLinks>
             <Link
               href="mailto: kolade.afode@yahoo.com"
               target="_blank"
@@ -105,7 +107,7 @@ const Contact = () => {
             >
               Github
             </Link>
-          </Container>
+          </ContactLinks>
           <PopUpContainer>
             {state && (
               <PopUp>
@@ -129,10 +131,12 @@ const Contact = () => {
               </PopUp>
             )}
 
-            <Indicator onClick={() => setstate(!state)}>⌘</Indicator>
+            <Indicator type="button" onClick={() => setstate(!state)}>
+              ⌘
+            </Indicator>
           </PopUpContainer>
         </MetaContainer>
-      </div>
+      </Box>
     </>
   );
 };

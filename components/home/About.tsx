@@ -14,18 +14,25 @@ const Cv = styled.a`
   }
 `;
 
+const Kola = styled.span`
+  font-weight: 700;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: underline;
+`;
+
 const About = () => {
   return (
     <Box>
       <p>
-        Hello, {`I'm`} Kola. A Front-End Developer based in Lagos, Nigeria. I am
-        passionate about creating accessible & pixel-perfect user interfaces
-        that scale. You can check out my CV
+        Hello, {`I'm`} <Kola>Kola</Kola>. A Front-End Developer with hands on
+        experience in building accessible & pixel-perfect web applications that
+        scale. You can check out my CV
         <Cv
-          href="https://ucarecdn.com/8e9b0c07-78c8-4dd4-a85d-3488ba3968b6/KOLADEAFODECV.pdf"
+          href="https://drive.google.com/file/d/1n-AnLRTplEqjscZh3s46MVF9MN8OvbNU/view?usp=sharing"
           target="_blank"
         >
-          {` `}here
+          here
         </Cv>
         .
       </p>

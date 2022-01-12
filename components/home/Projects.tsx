@@ -26,7 +26,10 @@ const Project = styled.div`
   box-shadow: 3px 4px 15px -8px rgba(0, 0, 0, 0.71);
 
   &:hover {
-    transform: translateX(0rem) translateY(-0.3125rem);
+    transform: translateX(0rem) translateY(-0.12rem);
+    @media ${device.mobile} {
+      transform: translateX(0rem) translateY(0rem);
+    }
   }
 
   a {
@@ -68,7 +71,7 @@ const Indicator = styled.div`
   }
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
   font-size: 2.5rem;
   color: #ffff;
   padding: 4px 16px;

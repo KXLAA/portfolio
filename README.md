@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <img src="https://user-images.githubusercontent.com/26466516/141659551-d7ba5630-7200-46fe-863b-87818dae970a.png" alt="Next.js TypeScript Starter">
 </p>
 
@@ -123,4 +123,4 @@ By default, this starter uses Yarn 1 (Classic), but this choice is yours. If you
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information. -->
