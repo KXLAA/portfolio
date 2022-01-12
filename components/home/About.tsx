@@ -27,7 +27,7 @@ const About = () => {
       <p>
         Hello, {`I'm`} <Kola>Kola</Kola>. A Front-End Developer with hands on
         experience in building accessible & pixel-perfect web applications that
-        scale. You can check out my CV
+        scale. You can check out my CV{` `}
         <Cv
           href="https://drive.google.com/file/d/1n-AnLRTplEqjscZh3s46MVF9MN8OvbNU/view?usp=sharing"
           target="_blank"
