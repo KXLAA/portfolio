@@ -41,6 +41,7 @@ const Stack = () => {
           <Bold hover="#949494">Express</Bold>,{` `}
           <Bold hover="#DC5EB7">GraphQL</Bold>, &{` `}
           <Bold hover="#4DB36A">Mongo DB</Bold>
+          {` `}
           or a GraphQL based CMS like <Bold hover="#adaaaa">Graphcms</Bold>.
         </Backend>
       </Box>
