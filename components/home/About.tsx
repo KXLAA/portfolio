@@ -29,7 +29,7 @@ const About = () => {
         experience in building accessible & pixel-perfect web applications that
         scale. You can check out my CV{` `}
         <Cv
-          href="https://drive.google.com/file/d/1n-AnLRTplEqjscZh3s46MVF9MN8OvbNU/view?usp=sharing"
+          href="https://ucarecdn.com/3c9d098c-d2b8-460e-b080-ec174324caab/Kolade_cv.pdf"
           target="_blank"
         >
           here
