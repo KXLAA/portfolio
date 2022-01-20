@@ -26,14 +26,15 @@ const About = () => {
     <Box>
       <p>
         Hello, {`I'm`} <Kola>Kola</Kola>. A Front-End Developer with hands on
-        experience in building accessible & pixel-perfect web applications that
-        scale. You can check out my CV{` `}
+        experience in building accessible & pixel-perfect websites & web
+        applications
+        {/* applications. You can check out my CV{` `}
         <Cv
           href="https://ucarecdn.com/3c9d098c-d2b8-460e-b080-ec174324caab/Kolade_cv.pdf"
           target="_blank"
         >
           here
-        </Cv>
+        </Cv> */}
         .
       </p>
     </Box>
