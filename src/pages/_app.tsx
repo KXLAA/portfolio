@@ -46,10 +46,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Kola | Front-End Developer</title>
-        <meta
-          name="description"
-          content="Kola is a Front-End Developer based in Lagos, Nigeria."
-        />
+        <meta name="description" content="Do it with flair ✨" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -76,10 +73,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://kxlaa.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Kola || Front-End Developer" />
-        <meta
-          property="og:description"
-          content="Kola is a Front-End Developer based in Lagos, Nigeria."
-        />
+        <meta property="og:description" content="Do it with flair ✨" />
         <meta
           property="og:image"
           content="https://ucarecdn.com/75a76fba-7bd1-4ef5-b29a-4b9f5d8f5d94/ogimage.png"
@@ -90,10 +84,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta property="twitter:domain" content="https://kxlaa.com/" />
         <meta property="twitter:url" content="https://kxlaa.com/" />
         <meta name="twitter:title" content="Kola || Front-End Developer" />
-        <meta
-          name="twitter:description"
-          content="Kola is a Front-End Developer based in Lagos, Nigeria."
-        />
+        <meta name="twitter:description" content="Do it with flair ✨" />
         <meta
           name="twitter:image"
           content="https://ucarecdn.com/75a76fba-7bd1-4ef5-b29a-4b9f5d8f5d94/ogimage.png"
