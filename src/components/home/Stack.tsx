@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Box from '../../components/common/Container';
+import Box from '../common/Container';
 
 type BoldProps = {
   hover?: string;
@@ -26,17 +26,18 @@ const Stack = () => {
         <Frontend>
           I mainly work within the <Bold>React</Bold> ecosystem, but {`I'm`}
           {` `}
-          always learning new technologies. My current tech stack is{` `}
+          always learning new tools & technologies. On the Frontend I have
+          experience with
+          {` `}
           <Bold hover="#f7df1e ">JavaScript</Bold>,{` `}
           <Bold hover="#007ACC">TypeScript</Bold>,{` `}
-          <Bold hover="#575757">Next.js</Bold>
-          {` `}& <Bold hover="#D78CA3">Styled-Components</Bold>.{` `}
+          <Bold hover="#575757"> & Next.js</Bold>.
         </Frontend>
       </Box>
 
       <Box>
         <Backend>
-          When a project needs a backend I use{` `}
+          On the Backend I have experience with{` `}
           <Bold hover="#699E5B">Node js</Bold>,{` `}
           <Bold hover="#949494">Express</Bold>,{` `}
           <Bold hover="#DC5EB7">GraphQL</Bold>, &{` `}

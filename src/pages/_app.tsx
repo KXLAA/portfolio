@@ -45,7 +45,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Kola | Front-End Developer</title>
+        <title>Kola | Typescript Engineer</title>
         <meta name="description" content="Do it with flair ✨" />
         <link
           rel="apple-touch-icon"
@@ -72,7 +72,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://kxlaa.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Kola || Front-End Developer" />
+        <meta property="og:title" content="Kola | Typescript Engineer" />
         <meta property="og:description" content="Do it with flair ✨" />
         <meta
           property="og:image"
@@ -83,7 +83,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="https://kxlaa.com/" />
         <meta property="twitter:url" content="https://kxlaa.com/" />
-        <meta name="twitter:title" content="Kola || Front-End Developer" />
+        <meta name="twitter:title" content="Kola | Typescript Engineer" />
         <meta name="twitter:description" content="Do it with flair ✨" />
         <meta
           name="twitter:image"
