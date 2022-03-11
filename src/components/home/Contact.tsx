@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Box from '../../components/common/Container';
-import device from '../../components/common/MediaQueries';
+import Box from '../common/Container';
+import device from '../common/MediaQueries';
 import { Heading } from './Projects';
 
 const ContactLinks = styled.div`
@@ -106,6 +106,14 @@ const Contact = () => {
               rel="noreferrer"
             >
               Github
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/kxlaa/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Linkedin
             </Link>
           </ContactLinks>
           <PopUpContainer>
