@@ -9,7 +9,7 @@ const Box = styled.section`
 
   @media ${device.laptop} {
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   @media ${device.tablet} {
