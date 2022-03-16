@@ -108,13 +108,13 @@ const Contact = () => {
               Github
             </Link>
 
-            <Link
+            {/* <Link
               href="https://www.linkedin.com/in/kxlaa/"
               target="_blank"
               rel="noreferrer"
             >
               Linkedin
-            </Link>
+            </Link> */}
           </ContactLinks>
           <PopUpContainer>
             {state && (
