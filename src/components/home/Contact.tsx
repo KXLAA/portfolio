@@ -90,6 +90,8 @@ const Contact = () => {
               href="mailto: kolade.afode@yahoo.com"
               target="_blank"
               rel="noreferrer"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="email"
             >
               Email
             </Link>
@@ -97,6 +99,8 @@ const Contact = () => {
               href="https://twitter.com/KXLAA_"
               target="_blank"
               rel="noreferrer"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="twitter"
             >
               Twitter
             </Link>
@@ -104,17 +108,21 @@ const Contact = () => {
               href="https://github.com/KXLAA"
               target="_blank"
               rel="noreferrer"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="github"
             >
               Github
             </Link>
 
-            {/* <Link
+            <Link
               href="https://www.linkedin.com/in/kxlaa/"
               target="_blank"
               rel="noreferrer"
+              data-splitbee-event="External Link"
+              data-splitbee-event-destination="linkedin"
             >
               Linkedin
-            </Link> */}
+            </Link>
           </ContactLinks>
           <PopUpContainer>
             {state && (

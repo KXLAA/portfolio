@@ -2,6 +2,8 @@ import { AppProps } from 'next/app';
 import '@/styles/global.scss';
 import { createGlobalStyle } from 'styled-components';
 import Head from 'next/head';
+import splitbee from '@splitbee/web';
+import { useEffect } from 'react';
 
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {
@@ -42,6 +44,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    splitbee.init({
+      scriptUrl: `/bee.js`,
+      apiUrl: `/_hive`,
+    });
+  }, []);
+
   return (
     <>
       <Head>

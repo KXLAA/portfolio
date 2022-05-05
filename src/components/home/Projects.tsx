@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import device from '../common/MediaQueries';
 import { Tag } from '../common/Button';
 import { projectData } from './projectData';
+import splitbee from '@splitbee/web';
+
+splitbee.track(`Click on Project`);
 
 const Container = styled.div`
   display: grid;
@@ -138,7 +141,12 @@ const Projects = () => {
                 <div>⌘</div>
               </Indicator>
 
-              <a href={url} target="_blank" rel="noreferrer">
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                data-splitbee-event="Click on Project"
+              >
                 <video autoPlay loop muted poster={poster}>
                   <source src={videoWebm} type="video/webm" />
                   <source src={videoMp4} type="video/mp4" />
