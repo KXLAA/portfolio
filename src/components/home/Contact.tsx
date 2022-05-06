@@ -80,49 +80,47 @@ const Contact = () => {
     border: none;
   `;
 
+  const contactLinks = [
+    {
+      name: `Email`,
+      url: `kolade.afode@yahoo.com`,
+      track: `email`,
+    },
+    {
+      name: `Twitter`,
+      url: `https://twitter.com/kxlaa_`,
+      track: `twitter`,
+    },
+    {
+      name: `Github`,
+      url: `https://github.com/KXLAA`,
+      track: `github`,
+    },
+    {
+      name: `Linkedin`,
+      url: `https://www.linkedin.com/in/kxlaa/`,
+      track: `linkedin`,
+    },
+  ];
+
   return (
     <>
       <Box>
         <Heading>CONTACT</Heading>
         <MetaContainer>
           <ContactLinks>
-            <Link
-              href="mailto: kolade.afode@yahoo.com"
-              target="_blank"
-              rel="noreferrer"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="email"
-            >
-              Email
-            </Link>
-            <Link
-              href="https://twitter.com/KXLAA_"
-              target="_blank"
-              rel="noreferrer"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="twitter"
-            >
-              Twitter
-            </Link>
-            <Link
-              href="https://github.com/KXLAA"
-              target="_blank"
-              rel="noreferrer"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="github"
-            >
-              Github
-            </Link>
-
-            <Link
-              href="https://www.linkedin.com/in/kxlaa/"
-              target="_blank"
-              rel="noreferrer"
-              data-splitbee-event="External Link"
-              data-splitbee-event-destination="linkedin"
-            >
-              Linkedin
-            </Link>
+            {contactLinks.map(({ name, url, track }) => (
+              <Link
+                key={name}
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                data-splitbee-event="External Link"
+                data-splitbee-event-destination={track}
+              >
+                {name}
+              </Link>
+            ))}
           </ContactLinks>
           <PopUpContainer>
             {state && (

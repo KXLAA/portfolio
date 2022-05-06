@@ -5,7 +5,10 @@ import { Tag } from '../common/Button';
 import { projectData } from './projectData';
 import splitbee from '@splitbee/web';
 
-splitbee.track(`Click on Project`);
+splitbee.track(`Click on Front-End Cardio`);
+splitbee.track(`Click on Feedback App`);
+splitbee.track(`Click on DevPortfolios`);
+splitbee.track(`Click on Nartefacts`);
 
 const Container = styled.div`
   display: grid;
@@ -145,7 +148,7 @@ const Projects = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                data-splitbee-event="Click on Project"
+                data-splitbee-event={`Click on ${title}`}
               >
                 <video autoPlay loop muted poster={poster}>
                   <source src={videoWebm} type="video/webm" />
