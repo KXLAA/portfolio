@@ -96,11 +96,11 @@ const Contact = () => {
       url: `https://github.com/KXLAA`,
       track: `github`,
     },
-    // {
-    //   name: `Linkedin`,
-    //   url: `https://www.linkedin.com/in/kxlaa/`,
-    //   track: `linkedin`,
-    // },
+    {
+      name: `Linkedin`,
+      url: `https://www.linkedin.com/in/kxlaa/`,
+      track: `linkedin`,
+    },
   ];
 
   return (
