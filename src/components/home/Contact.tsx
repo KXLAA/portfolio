@@ -115,7 +115,7 @@ const Contact = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                data-splitbee-event="External Link"
+                data-splitbee-event={`Click on ${name}`}
                 data-splitbee-event-destination={track}
               >
                 {name}
